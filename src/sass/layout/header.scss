@@ -1,0 +1,22 @@
+
+
+
+
+.header {
+    @include flex_row_spacebetween;
+
+    &_div_list {
+        @include flex_row_spacebetween;
+        list-style-type: none;
+        &_link {
+            color: $colorMainWriting;
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 34px;
+        }
+    }
+}
+
+.active {
+    text-decoration: underline;
+}

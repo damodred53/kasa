@@ -1,9 +1,15 @@
 import React from "react";
+import Header from "../Header.jsx";
+import Footer from "../Footer.jsx";
 
 const About = () => {
 
     return (
-        <h1>Ceci est la page About</h1>
+        <div>  
+            <Header />
+            <h1>Ceci est la page about</h1>
+            <Footer />
+        </div>
     )
 }
 

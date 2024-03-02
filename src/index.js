@@ -1,23 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './main.scss'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Components/Home/Home.jsx';
 import About from './Components/About/About.jsx';
 import Error from './Components/Error/Error.jsx';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import './main.scss'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        
-      <Route path='/' element={<Home />} />
-      
-      <Route path='/about' element={<About />} />
-      <Route path='/*' element={<Error />}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/*' element={<Error />}/>
       </Routes>
     </Router>
 

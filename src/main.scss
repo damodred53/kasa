@@ -1,10 +1,16 @@
 
 /* importations des différents fichiers sass du projet Kasa */
 
-@import './sass/base.scss';
-@import './sass/utils.scss';
-@import './sass/components.scss';
-@import './sass/layout.scss';
-@import './sass/pages.scss';
-@import './sass/themes.scss';
-@import './sass/vendors.scss';
+@import './sass/base/base.scss';
+@import './sass/utils/mixin.scss';
+@import './sass/themes/variables.scss';
+@import './sass/components/components.scss';
+
+/* importation des différents fichiers sass gérant les layouts du projet kasa */
+@import './sass/layout/header.scss';
+@import './sass/layout/footer.scss';
+
+
+@import './sass/pages/pages.scss';
+
+@import './sass/vendors/vendors.scss';

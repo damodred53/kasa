@@ -1,0 +1,11 @@
+
+.footer {
+    @include flex_column_center;
+    background-color: $backgroundColorFooter;
+    padding-top : 2rem;
+    padding-bottom: 1rem;
+
+    &_paragraph {
+        color: $backgroundColorWriting;
+    }
+}
