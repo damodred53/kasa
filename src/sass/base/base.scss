@@ -1,6 +1,12 @@
 
-*{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top:4rem;
+}
+
+* {
+    font-family: Montserrat;
 }

@@ -1,0 +1,18 @@
+.banner {
+    @include flex_column_center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/picture_title_home.png');
+    height: 10rem;
+    max-width: 100%;
+    
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  50%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    
+
+    &_title {
+        color: $colorTitle;
+    }
+}
