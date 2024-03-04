@@ -11,3 +11,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flex_column_spacebetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

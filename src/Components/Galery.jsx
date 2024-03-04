@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Logements from '../dataBase/data.json';
 import { Link } from "react-router-dom";
+import Card from "./Card.jsx";
 
 const Galery = () => {
 
@@ -11,19 +12,13 @@ const Galery = () => {
         setAppartements(Logements)
     }, [])
 
-    console.log(appartements)
+    /*console.log(appartements)*/
 
     return (
         <div className="galery">
-            {appartements.map((appartement) => {
-                return (
-                        <article className="galery_article" style={{backgroundImage : `linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), url(${appartement.cover})` }}>
-                            <Link className="galery_article_link">
-                                    <h2 className="galery_article_title">{appartement.title}</h2>
-                            </Link>
-                        </article >  
-                )
-            })}
+            {appartements.map((appartement) => (
+                <Card  key={appartement.id} id={appartement.id} title={appartement.title} picture={appartement.cover} />
+            ))}
         </div>
 
     )
