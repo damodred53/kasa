@@ -1,0 +1,26 @@
+.dropdown {
+    background-color: $colorBackgroundDropdownMenu;
+    height: 40px;
+    border-radius: 5px;
+    height: fit-content;
+    width: 80%;
+
+    &_visible_part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_cursor {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &_invisible_part {
+        background-color: $backgroundMainGalery;
+        padding: 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        /*content-visibility: auto;*/
+    }
+}

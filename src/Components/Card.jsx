@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 const Card = ({key,title,  picture}) => {
 
 
-console.log(title)
-console.log(picture)
 
     return (
 

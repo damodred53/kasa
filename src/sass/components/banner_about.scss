@@ -1,0 +1,6 @@
+.banner_about{
+    @include flex_column_center;
+    @include banner;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/picture_about.png');
+    
+}

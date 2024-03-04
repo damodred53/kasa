@@ -4,6 +4,9 @@
 @import './sass/base/base.scss';
 @import './sass/utils/mixin.scss';
 @import './sass/themes/variables.scss';
+
+@import './sass/components/dropdown_menu.scss';
+@import './sass/components/banner_about.scss';
 @import './sass/components/banner.scss';
 
 /* importation des différents fichiers sass gérant les layouts du projet kasa */
@@ -11,7 +14,7 @@
 @import './sass/layout/footer.scss';
 @import './sass/layout/galery.scss';
 
-
+@import './sass/pages/about.scss';
 @import './sass/pages/error.scss';
 
 @import './sass/vendors/vendors.scss';

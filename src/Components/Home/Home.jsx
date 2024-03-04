@@ -4,14 +4,14 @@ import Footer from "../Footer";
 import Banner from "../Banner_Home";
 import Galery from "../Galery";
 
-const Home = () => {
- 
 
- 
+
+const Home = () => {
+
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner  />
       <Galery />
       <Footer />
     </div>

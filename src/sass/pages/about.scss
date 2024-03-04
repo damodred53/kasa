@@ -1,0 +1,5 @@
+.surrounding_dropdown_menu {
+    @include flex_column_spacebetween;
+    height: auto;
+    padding-bottom: 2rem;
+}

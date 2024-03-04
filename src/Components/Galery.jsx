@@ -1,7 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Logements from '../dataBase/data.json';
-import { Link } from "react-router-dom";
 import Card from "./Card.jsx";
 
 const Galery = () => {
@@ -9,10 +7,18 @@ const Galery = () => {
     const [appartements, setAppartements] = useState([])
 
     useEffect(() => {
-        setAppartements(Logements)
+
+        const fetchData = async () => {
+        const response = await fetch('/dataBase/data.json')
+        const data = await response.json()
+        setAppartements(data)
+        }
+
+        fetchData()
+
     }, [])
 
-    /*console.log(appartements)*/
+    console.log("données des logements : ",appartements)
 
     return (
         <div className="galery">
