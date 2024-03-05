@@ -2,7 +2,10 @@
 /* importations des différents fichiers sass du projet Kasa */
 
 @import './sass/base/base.scss';
+
 @import './sass/utils/mixin.scss';
+@import './sass/utils/keyframes.scss';
+
 @import './sass/themes/variables.scss';
 
 @import './sass/components/dropdown_menu.scss';

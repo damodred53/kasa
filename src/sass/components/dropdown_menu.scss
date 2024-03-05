@@ -4,15 +4,22 @@
     border-radius: 5px;
     height: fit-content;
     width: 80%;
+    margin-bottom: 2rem;
 
     &_visible_part {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        &_title {
+            color: $colorTitle;
+            padding-left: 2rem;
+        }
+
         &_cursor {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
+            padding-right: 2rem;
         }
     }
 
@@ -21,6 +28,11 @@
         padding: 1rem;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        /*content-visibility: auto;*/
+        display: none;
+        animation : heightOnex 2s linear forwards;
     }
+}
+
+.displayed {
+    animation : heightOney 2s linear forwards;
 }

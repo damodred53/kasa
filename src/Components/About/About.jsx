@@ -33,7 +33,7 @@ const About = () => {
                 {data.map((about) => {
 
                     return ( 
-                        <DropdownMenu data={about.paragraphe}/>
+                        <DropdownMenu key={about.id} paragraphe={about.paragraphe} titre={about.titre} />
                     )
                 })}
             </div>
