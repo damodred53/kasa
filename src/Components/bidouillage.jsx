@@ -5,3 +5,14 @@
         </Link>
     </article >  
 )*/
+
+
+/*<div>
+                        {
+                            Array.from({length: selectedLogement.rating}, (_, index) => (
+                                <img src={activeStar} key={index}></img>
+                            ))
+                        }
+                    </div>*/
+
+                    /*<img src={selectedLogement.host.picture} alt={selectedLogement.host.name} ></img>*/

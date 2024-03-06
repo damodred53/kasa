@@ -12,7 +12,7 @@ const displayContent = () => {
     
     const selectedInstance = dropdownContentPart.current;
 
-    if (selectedInstance.style.display !== "block") {
+    if (!isDisplayActivated) {
         selectedInstance.style.display = "block";
         setIsDisplayActivated(true)
 
@@ -22,18 +22,18 @@ const displayContent = () => {
     }
 }
 
-
     return (
         <div className="dropdown">
 
-            <div className="dropdown_visible_part">
+            <div className={"dropdown_visible_part"}>
                 <h2 className="dropdown_visible_part_title">{titre}</h2>
-                <img className="dropdown_visible_part_cursor" src={Cursor} alt="curseur" onClick={displayContent}></img>
+                <img className={`dropdown_visible_part_cursor ${isDisplayActivated ? "rotation" : ""}`} src={Cursor} alt="curseur" onClick={displayContent}></img>
             </div>
             
             <div className={`dropdown_invisible_part ${isDisplayActivated ? "displayed" : ""}`}  ref={dropdownContentPart}>
                 <div className="dropdown_invisible_part_paragraph">{paragraphe}</div>         
             </div>
+            
         </div>
     )
 }

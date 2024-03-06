@@ -18,7 +18,7 @@ const Galery = () => {
 
     }, [])
 
-    console.log("données des logements : ",appartements)
+    /*console.log("données des logements : ",appartements)*/
 
     return (
         <div className="galery">

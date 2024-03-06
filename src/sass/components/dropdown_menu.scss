@@ -10,16 +10,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        padding: 0rem 2rem 0rem 2rem;
+        
         &_title {
             color: $colorTitle;
-            padding-left: 2rem;
         }
 
         &_cursor {
             width: 30px;
             height: 30px;
-            padding-right: 2rem;
+            transition: transform 1s ease;
         }
     }
 
@@ -29,10 +29,10 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         display: none;
-        animation : heightOnex 2s linear forwards;
+        animation : heightOnex 2s ;
     }
 }
 
-.displayed {
-    animation : heightOney 2s linear forwards;
+.rotation {
+    transform: rotate(-180deg);
 }
