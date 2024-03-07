@@ -16,3 +16,7 @@
                     </div>*/
 
                     /*<img src={selectedLogement.host.picture} alt={selectedLogement.host.name} ></img>*/
+
+                    /*{selectedTag.map((tag, index) => {
+                        return (<p className='logement_tags_mapped_tag' key={index}>{tag}</p>)
+                      })}*/

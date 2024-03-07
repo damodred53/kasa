@@ -24,12 +24,24 @@
     }
 
     &_invisible_part {
+        
         background-color: $backgroundMainGalery;
         padding: 1rem;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         display: none;
         animation : heightOnex 2s ;
+
+        &_paragraph {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            
+
+            &_list {
+                margin: 0.2rem;
+            }
+        }
     }
 }
 

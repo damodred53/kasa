@@ -1,3 +1,9 @@
+
+@mixin flex_row {
+    display : flex;
+    flex-direction: row;
+}
+
 @mixin flex_row_spacebetween {
     display: flex;
     flex-direction: row;
