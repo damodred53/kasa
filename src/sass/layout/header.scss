@@ -14,15 +14,69 @@
         list-style-type: none;
         padding: 0%;
         &_link {
-            color: $colorMainWriting;
+            color: black;
             text-decoration: none;
             font-size: 25px;
             line-height: 34px;
-            
         }
     }
 }
 
 .active {
     text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+
+    .header {
+
+        &_div {
+            width: 25%;
+            
+        }
+      
+    }
+    
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+
+        &_div {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+
+        &_div {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+
+        &_logo {
+            width: 35%;
+        }
+
+        &_div {
+
+
+            &_list {
+                width: 100%;
+
+                &_link {
+                    font-size: 18px;
+                }
+                
+            }
+            
+        }
+    }
 }

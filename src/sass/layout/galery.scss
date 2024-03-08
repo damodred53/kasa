@@ -35,3 +35,29 @@
     }
 
   }
+
+  @media (max-width: 1000px) {
+
+    .galery {
+
+
+        &_article {
+
+            width: calc(50% - 2rem);  
+        }
+    }
+
+  }
+
+  @media (max-width: 780px) {
+
+    .galery {
+        padding: 0%;
+
+        &_article {
+            /*width: 100%;*/
+            width: calc(100%); 
+        }
+    }
+
+  }

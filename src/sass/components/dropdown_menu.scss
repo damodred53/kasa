@@ -48,3 +48,27 @@
 .rotation {
     transform: rotate(-180deg);
 }
+
+@media (max-width: 780px) {
+
+    .dropdown {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .dropdown {
+
+        &_visible_part {
+            height: 3rem;
+        }
+        
+
+
+        &_visible_part_title {
+            margin: 0%;
+            margin-top: 0.5rem;
+        }
+    }
+}

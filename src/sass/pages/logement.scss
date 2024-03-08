@@ -38,6 +38,8 @@
 
             }
         }
+
+       
     }
 
     &_tags {
@@ -57,6 +59,11 @@
             font-size: 14px;
             line-height: 20px;            
         }
+
+        &_stars {
+            @include flex_row_spacebetween;
+            width: 15%; 
+        }
     }
 
 
@@ -66,5 +73,9 @@
         gap: 5rem;
 
         
+    }
+
+    &_div {
+        @include flex_row_spacebetween
     }
 }

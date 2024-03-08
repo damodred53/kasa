@@ -7,3 +7,21 @@
         color: $colorTitle;
     }
 }
+
+@media (max-width: 770px) {
+
+    .banner {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (max-width: 510px) {
+
+    .banner {
+        font-size: 0.6rem;
+        
+    }
+    
+}
