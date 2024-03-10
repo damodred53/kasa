@@ -8,6 +8,8 @@ const Carousel = ({images, texte}) => {
     const [index, setIndex] = useState(0);
     const length = images.length;
 
+    console.log("nombre d'image a afficher:", length);
+
     const handleNext = () => {
         if (index+1 >= length) {
             setIndex(0)
@@ -19,7 +21,7 @@ const Carousel = ({images, texte}) => {
       };
     
       const handlePrevious = () => {
-        if (index <= 1) {
+        if (index < 1) {
             setIndex(length-1)
         } else {
             setIndex(index-1);
@@ -35,9 +37,16 @@ console.log("images pour le carousel: ", images);
     return (
         <div className="carousel">
             <div className="carousel_picture" style={{backgroundImage: `url(${images[index]})`}} alt={`photographie de l'appartement: ${texte}`} >
-                <img src=""></img>
-                <img className="carousel_arrow_previous" src={prevArrow} onClick={handlePrevious}></img>
-                <img className="carousel_arrow_next" src={nextArrow} onClick={handleNext}></img>
+                {length === 1 ? 
+                ""
+                :
+                <img className="carousel_arrow_previous" src={prevArrow} onClick={handlePrevious} alt="précédent"></img>
+                }
+                {length === 1 ? 
+                ""
+                :
+                <img className="carousel_arrow_next" src={nextArrow} onClick={handleNext} alt="suivant"></img>
+                }
                 <div className="carousel_number">
                     {index + 1}/{length}
             </div>

@@ -20,3 +20,15 @@
                     /*{selectedTag.map((tag, index) => {
                         return (<p className='logement_tags_mapped_tag' key={index}>{tag}</p>)
                       })}*/
+
+
+                      /*<div className="dropdown_invisible_part_paragraph">
+                {Array.isArray(paragraphe) ? 
+                    paragraphe.map((tag, index) => (
+                        <p className="dropdown_invisible_part_paragraph_list" key={index}>{tag}</p>
+                    ))
+                : (
+                    <p >{paragraphe}</p>
+                )}
+            </div>
+        </div>*/

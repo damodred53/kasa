@@ -26,7 +26,8 @@ const About = () => {
     
 
     return (
-        <div>
+        <>
+        <div className="all_about">
             <Header />
             <BannerAbout />
             <div className="surrounding_dropdown_menu">
@@ -37,8 +38,10 @@ const About = () => {
                     )
                 })}
             </div>
-            <Footer />
+            
         </div>
+        <Footer />
+        </>
     );
 };
 

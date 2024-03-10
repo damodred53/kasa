@@ -1,9 +1,11 @@
 .logement {
 
-    &_title_profil {
-        @include flex_row_spacebetween;
-        margin-top: 2rem;
+    @include flex_row_spacebetween;
 
+    &_title_left_part {
+        
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
         &_location {
 
@@ -20,26 +22,34 @@
             }
         }
 
+        
+    }
+
+    &_title_right_part {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
         &_vendor {
             @include flex_row;
+            justify-content: flex-end;
             align-items: center;
+            color: $colorMainWriting;
             gap: 1rem;
-            &_sub_title {
-                color: $colorMainWriting;
-                margin: 0%;
-                width: 50%;
-                text-align: right
+            text-align: right;
+            font-weight: 500;
 
+            &_sub_title {
+                width: 40%
             }
 
             &_picture {
                 border-radius: 50%;
-                width : 40%;
-
+                width : 25%;
             }
         }
 
-       
+        
     }
 
     &_tags {
@@ -47,7 +57,7 @@
         align-items: center;
         height: 50px;
         gap: 1rem;
-        margin-bottom: 2rem;
+        
 
         &_list {
             background-color: $colorMainWriting;
@@ -61,8 +71,7 @@
         }
 
         &_stars {
-            @include flex_row_spacebetween;
-            width: 15%; 
+            margin-top: 1rem
         }
     }
 
@@ -75,7 +84,13 @@
         
     }
 
-    &_div {
-        @include flex_row_spacebetween
-    }
+    /*&_div {
+        @include flex_row_spacebetween;
+        margin-bottom: 1.5rem;
+    }*/
+}
+
+@media (max-width: 972px) {
+
+
 }

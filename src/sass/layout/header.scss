@@ -4,7 +4,7 @@
 
 .header {
     @include flex_row_spacebetween;
-
+    margin: 0%;
     &_div {
         width:15%;
     }

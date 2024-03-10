@@ -20,6 +20,7 @@
             width: 30px;
             height: 30px;
             transition: transform 1s ease;
+            cursor: pointer;
         }
     }
 
@@ -31,12 +32,13 @@
         border-bottom-right-radius: 5px;
         display: none;
         animation : heightOnex 2s ;
+        overflow: hidden;
 
         &_paragraph {
             display: flex;
             flex-direction: column;
             height: max-content;
-            
+            content-visibility: auto;
 
             &_list {
                 margin: 0.2rem;
@@ -64,11 +66,10 @@
             height: 3rem;
         }
         
-
-
         &_visible_part_title {
             margin: 0%;
-            margin-top: 0.5rem;
+            margin-top: 0.3rem;
         }
     }
 }
+

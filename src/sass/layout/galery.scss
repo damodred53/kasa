@@ -1,11 +1,12 @@
 
   .galery {
         display: flex;
-        justify-content: space-between;
+        column-gap: 2rem;
         flex-wrap: wrap;
         background-color: $backgroundMainGalery;
         padding: 2rem;
         border-radius: 10px;
+        margin-bottom: 2rem;
 
     &_article {
         height: 250px;

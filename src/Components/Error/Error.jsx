@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 const Error = () => {
 
     return (
-        <div>
+        <>
+        <div className="all_error">
             <Header />
             
         <div className="error">
@@ -15,8 +16,9 @@ const Error = () => {
             <Link className="error_link" to="/" >Retourner sur la page d'accueil</Link>
         </div>
 
-            <Footer />
         </div>
+        <Footer />
+        </>
     )
 }
 
