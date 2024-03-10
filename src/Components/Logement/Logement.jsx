@@ -3,19 +3,21 @@ import Header from '../Header';
 import Footer from '../Footer';
 import { useNavigate, useParams } from 'react-router-dom';
 import Carousel from '../Carousel/Carousel';
-import activeStar from '../../assets/star_active.png';
-import inactiveStar from '../../assets/star_inactive.png';
 import DropdownMenu from '../DropdownMenu/DropdownMenu.jsx';
 import Etoiles from '../Etoiles/etoiles.jsx';
 
+/* page permettant d'afficher les appartements */
+
 const Logement = () => {
   const [logement, setLogement] = useState([]);
-  /*const [selectedLogement, setSelectedLogement] = useState({});*/
   let selectedLogement = {};
+
+  /* constantes permettant de récupérer l'id du logement lui même contenu dans l'URL de la page */
   const navigate = useNavigate();
   const params = useParams();
   const id = params.id;
 
+  /* fonction permettant de récupérer lors du premier chargement de la page les données des logements  */
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,7 +28,6 @@ const Logement = () => {
         }
 
         const data = await response.json();
-        console.log(data);
         setLogement(data);
       } catch (error) {
         console.error('Impossible de récupérer les données : ', error);
@@ -36,18 +37,16 @@ const Logement = () => {
     fetchData();
   }, []);
 
-
+/* fonction permettant de retrouver les informations du logement dont l'id est égale à l'url de la page */
     const filteredData = logement.find((selection) => selection.id === id);
-    /*console.log(filteredData)*/
+
     if (filteredData) {
-        /*selectedLogement(filteredData);*/
         selectedLogement = filteredData
     } else {
       navigate('/*');
     }
 
-    console.log("donnée du logement selectionné :", selectedLogement)
-  // Accédez aux propriétés de selectedLogement pour afficher dans votre composant
+    /* extraction des données utiles contenues dans la variable selectedLogement */
   const selectedTitle = selectedLogement.title || '';
   const selectedLocation = selectedLogement.location || '';
   const selectedHostName = selectedLogement.host ? selectedLogement.host.name : '';
@@ -56,7 +55,6 @@ const Logement = () => {
   const selectedPictures = selectedLogement.pictures || '';
   const selectedRating = selectedLogement.rating || '';
   
-  console.log(selectedPictures)
   return (
     <>
       <div className='all_logement'>

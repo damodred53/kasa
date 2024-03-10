@@ -2,11 +2,7 @@ import React from "react";
 import Cursor from "../../assets/cursor.svg";
 import { useRef, useState } from "react";
 
-const DropdownMenu = ({paragraphe, titre}) => {
-
-    console.log(paragraphe)
-
-   
+const DropdownMenu = ({paragraphe, titre}) => {  
 
 const dropdownContentPart = useRef(null)
 const [isDisplayActivated, setIsDisplayActivated] = useState(false)

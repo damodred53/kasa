@@ -5,19 +5,16 @@ import { useState } from "react";
 
 const Carousel = ({images, texte}) => {
 
+    /* UseState permettant de savoir quelle image montrer en fonction de son index */
     const [index, setIndex] = useState(0);
     const length = images.length;
-
-    console.log("nombre d'image a afficher:", length);
 
     const handleNext = () => {
         if (index+1 >= length) {
             setIndex(0)
-
         } else {
             setIndex(index+1);
         }
-        
       };
     
       const handlePrevious = () => {
@@ -26,13 +23,7 @@ const Carousel = ({images, texte}) => {
         } else {
             setIndex(index-1);
         }
-        
       };
-
-    
-
-
-console.log("images pour le carousel: ", images);
 
     return (
         <div className="carousel">

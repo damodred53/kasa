@@ -9,9 +9,10 @@ import Logement from './Components/Logement/Logement.jsx';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-
+/* capture de l'élément root présent dnas le html */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  /* intégration des routes présentes dans le site web */
   <React.StrictMode>
     <Router>
       <Routes>

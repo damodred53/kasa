@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Card = ({ title, id, picture}) => {
 
+/* fonction servant de template pour les cards des logements sur la page d'accueil */
+
+const Card = ({ title, id, picture}) => {
 
     return (
 

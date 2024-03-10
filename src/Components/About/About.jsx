@@ -4,10 +4,12 @@ import Footer from "../Footer.jsx";
 import BannerAbout from "../Banner_About.jsx";
 import DropdownMenu from "../DropdownMenu/DropdownMenu.jsx";
 
+/*page about du site web */
 
 const About = () => {
     const [data, setData] = useState([]);
 
+    /* fonction permettant lors du premier chargement de la page d'aller chercher les informations concernant la page about */
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -32,13 +34,11 @@ const About = () => {
             <BannerAbout />
             <div className="surrounding_dropdown_menu">
                 {data.map((about) => {
-
                     return ( 
                         <DropdownMenu key={about.id} paragraphe={about.paragraphe} titre={about.titre} />
                     )
                 })}
             </div>
-            
         </div>
         <Footer />
         </>

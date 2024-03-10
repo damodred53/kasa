@@ -2,6 +2,8 @@ import React from "react";
 import Logo_kasa from '../assets/logo_kasa.svg';
 import { NavLink } from "react-router-dom";
 
+/* fonction permettant de gérer et d'afficher le header présent sur toutes les pages du site web */
+
 const Header = () => {
 
     return (

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import Banner from "../Banner_Home";
 import Galery from "../Galery";
 
-
+/* page d'accueil du site web */
 
 const Home = () => {
 
