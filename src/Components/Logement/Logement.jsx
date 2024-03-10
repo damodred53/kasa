@@ -56,7 +56,7 @@ const Logement = () => {
   const selectedRating = selectedLogement.rating || '';
   
   return (
-    <>
+    <div className='main'>
       <div className='all_logement'>
         <Header />
         <Carousel images={selectedPictures} texte={selectedTitle} />
@@ -94,8 +94,8 @@ const Logement = () => {
         </div>
         
       </div>
-      <Footer />
-    </>
+      
+    </div>
   );
   
 };

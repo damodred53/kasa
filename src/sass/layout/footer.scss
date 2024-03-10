@@ -4,8 +4,14 @@
     background-color: $backgroundColorFooter;
     padding-top : 2rem;
     padding-bottom: 1rem;
-
+    
     &_paragraph {
         color: $backgroundColorWriting;
     }
+
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }

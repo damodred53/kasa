@@ -9,14 +9,14 @@ import Galery from "../Galery";
 const Home = () => {
 
   return (
-    <>
-    <div className="all_about">
-      <Header />
-      <Banner  />
-      <Galery />
+    <div className="main">
+      <div className="all_about">
+        <Header />
+        <Banner  />
+        <Galery />
+      </div>
+        
     </div>
-      <Footer />
-    </>
   );
 }
 

@@ -18,3 +18,11 @@
         margin-top:1rem;
     }
 }
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: center;
+  }

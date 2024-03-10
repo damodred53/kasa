@@ -28,7 +28,7 @@ const About = () => {
     
 
     return (
-        <>
+        <div className="main">
         <div className="all_about">
             <Header />
             <BannerAbout />
@@ -40,8 +40,8 @@ const About = () => {
                 })}
             </div>
         </div>
-        <Footer />
-        </>
+        
+        </div>
     );
 };
 

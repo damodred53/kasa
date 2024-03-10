@@ -8,6 +8,7 @@ import Error from './Components/Error/Error.jsx';
 import Logement from './Components/Logement/Logement.jsx';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Footer from './Components/Footer.jsx';
 
 /* capture de l'élément root présent dnas le html */
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,11 @@ root.render(
     </Router>
 
   </React.StrictMode>
+);
+
+const footer = ReactDOM.createRoot(document.getElementById('footer_kasa'));
+footer.render(
+  <Footer />
 );
 
 // If you want to start measuring performance in your app, pass a function
