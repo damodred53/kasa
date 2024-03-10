@@ -39,3 +39,12 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 850px) {
+
+    .carousel {
+        &_arrow_previous, &_arrow_next {
+            width: 1rem;
+        }
+    }
+}

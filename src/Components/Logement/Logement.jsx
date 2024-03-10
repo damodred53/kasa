@@ -82,17 +82,17 @@ const Logement = () => {
                 <img className='logement_title_right_part_vendor_picture' src={selectedHostPicture} alt={`profil de ${selectedHostName}`} />
               </div>
               <div className='logement_tags_stars'>
-                <Etoiles rating={selectedRating} />
+                <Etoiles className="logement_tags_stars_icon" rating={selectedRating} />
               </div>
             </div>
           </div>
           
         
         <div className="logement_dropdown_menus">
-          <>
-            <DropdownMenu titre={"Description"} paragraphe={selectedLogement.description} />
-            <DropdownMenu titre={"Équipement"} paragraphe={selectedLogement.equipments} />
-          </>
+          
+            <DropdownMenu  className='test_test'  titre={"Description"} paragraphe={selectedLogement.description} />
+            <DropdownMenu className='test_test'  titre={"Équipement"} paragraphe={selectedLogement.equipments} />
+          
         </div>
         
       </div>

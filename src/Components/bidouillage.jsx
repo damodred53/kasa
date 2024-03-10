@@ -32,3 +32,14 @@
                 )}
             </div>
         </div>*/
+
+
+        /*<div className="logement_dropdown_menus">
+          
+        <div className='logement_dropdown_menus_unit'><DropdownMenu  titre={"Description"} paragraphe={selectedLogement.description} /></div>
+        <div className='logement_dropdown_menus_unit'><DropdownMenu  titre={"Équipement"} paragraphe={selectedLogement.equipments} /></div>
+      
+    </div>*/
+
+
+    /*<span className='test'><DropdownMenu className='test_test'  titre={"Équipement"} paragraphe={selectedLogement.equipments} /></span>*/
