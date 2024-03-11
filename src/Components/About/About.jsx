@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header.jsx";
-import Footer from "../Footer.jsx";
 import BannerAbout from "../Banner_About.jsx";
 import DropdownMenu from "../DropdownMenu/DropdownMenu.jsx";
 

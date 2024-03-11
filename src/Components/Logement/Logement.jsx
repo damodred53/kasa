@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Header';
-import Footer from '../Footer';
 import { useNavigate, useParams } from 'react-router-dom';
 import Carousel from '../Carousel/Carousel';
 import DropdownMenu from '../DropdownMenu/DropdownMenu.jsx';

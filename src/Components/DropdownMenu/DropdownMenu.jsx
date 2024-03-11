@@ -24,7 +24,7 @@ const displayContent = () => {
 
 
 return (
-    <div className="dropdown">
+    <div data-testid="dropdown-1" className="dropdown">
         <div className={"dropdown_visible_part"}>
             <h2 className="dropdown_visible_part_title">{titre}</h2>
             <img className={`dropdown_visible_part_cursor ${isDisplayActivated ? "rotation" : ""}`} src={Cursor} alt="curseur" onClick={displayContent}></img>

@@ -23,7 +23,7 @@ const Galery = () => {
     }, [])
 
     return (
-        <div className="galery">
+        <div data-testid="galery-1" className="galery">
             {appartements.map((appartement) => (
                 <Card  key={appartement.id} id={appartement.id} title={appartement.title} picture={appartement.cover} />
             ))}

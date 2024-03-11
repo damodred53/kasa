@@ -26,7 +26,7 @@ const Carousel = ({images, texte}) => {
       };
 
     return (
-        <div className="carousel">
+        <div data-testid="carousel-1" className="carousel">
             <div className="carousel_picture" style={{backgroundImage: `url(${images[index]})`}} alt={`photographie de l'appartement: ${texte}`} >
                 {length === 1 ? 
                 ""
