@@ -145,6 +145,14 @@
     .logement {
         flex-direction: column;
 
+        &_title_right_part {
+            margin-top: 2rem;
+        }
+
+        &_title_right_part_vendor_sub_title {
+            font-size: 14px;
+        }
+
         &_title_left_part {
             width: 100%;
             display: flex;
@@ -166,6 +174,7 @@
             
             &_list {
                 margin-bottom: 1rem;
+                
             }
         }
 
@@ -197,3 +206,10 @@
 
 }
 
+@media (max-width: 390px) {
+
+    .logement_title_right_part {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
