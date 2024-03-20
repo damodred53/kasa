@@ -2,10 +2,16 @@
     @include flex_column_center;
     @include banner;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/picture_title_home.png');
-    
+
     &_title {
         color: $colorTitle;
     }
+}
+
+.header_div_list_link {
+  
+    color: #FF6060!important;
+    
 }
 
 @media (max-width: 770px) {
@@ -23,5 +29,11 @@
         font-size: 0.6rem;
         
     }
-    
+
+    .header_div_list_link {
+        text-transform: uppercase;
+        font-size: 14px!important;
+        color: #FF6060!important;
+        
+    }
 }
